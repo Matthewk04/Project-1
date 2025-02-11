@@ -3,7 +3,7 @@ package librarySystem;
 
 public class Library {
 
-	private Book[] books = new Book[5];
+	private final Book[] books = new Book[5];
 	private int count;
 	
 	/**
@@ -74,9 +74,6 @@ public class Library {
 		return books;
 	}
 
-	public void setBooks(Book[] books) {
-		this.books = books;
-	}
 	
 	public int getCount() {
 		return count;
