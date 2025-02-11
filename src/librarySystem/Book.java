@@ -87,5 +87,18 @@ public class Book {
 		}
 		return false;	
 		}
+	
+	/**
+	 * Method that will duplicate an existing book object
+	 * @param other
+	 * 				holds the book object that is being coppied
+	 * 
+	 */
+	public Book(Book other) {
+		this.title = other.title;
+		this.author = other.author;
+		this.ISBN = other.ISBN;
+		this.price = other.price;
+	}
 
 }
