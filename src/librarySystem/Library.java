@@ -41,7 +41,19 @@ public class Library {
 		num++;
 		}
 	}
-	
+	/**
+	 * This method will remove a book from the array and shift the remainder of the books over
+	 * 
+	 * @param
+	 * 			book
+	 * 					Holds the info about the book that is to be removed
+	 * 
+	 * @return
+	 * 			Returns True if the book was removed and everything shifted over
+	 * 			Returns False if the book was not found in the array
+	 * 
+	 */
+	public
 	public boolean removeBook(Book book) {
 		for (int i=0; i<count; i++) {
 			if (books[i].getISBN().equals(ISBN)) {
