@@ -42,9 +42,21 @@ public class Library {
 		}
 	}
 	
-	//public boolean removeBook(Book book) {
-		//To do
-	//}
+	public boolean removeBook(Book book) {
+		for (int i=0; i<count; i++) {
+			if (books[i].getISBN().equals(ISBN)) {
+				System.out.println("Removing book: "+books[i]);
+				//shift to left
+				for (int j=i; j<count-1; j++) {
+					books[j]=books[j+1];
+				}
+				books[--count]=null;
+				return true;
+			}
+		}
+		System.out.println("Book not found.");
+		return false;
+	}
 	
 	
 	/**
