@@ -18,8 +18,20 @@ public class Book {
 	public String toString() {
 		return title + " by " + author + " (ISBN: " + ISBN + ", $" + price + ")";
 	}
-
-	public Book(String title, String author, String ISBN, Double price) {
+	
+	/**
+	 * parameterized constructor, that will create a Book object with
+	 * a title, author, ISBN, and price
+	 * @param title
+	 * 						This argument is the title of the book
+	 * @param author
+	 * 						This argument is the author of the book
+	 * @param ISBN
+	 * 						This argument is the ISBN for the book
+	 * @param price
+	 * 						This argument is the price of the book
+	 */
+	public Book(String title, String author, String ISBN, double price) {
 		this.title = title;
 		this.author = author;
 		this.ISBN = ISBN;
@@ -60,9 +72,13 @@ public class Book {
 	}
 	
 	/**
-	 * This method will compare the book object passed 
+	 * This method will compare the object passed ISBN with the other books in the array
+	 * 
 	 * @param other
+	 * 					This argument holds the book object to be compared
 	 * @return
+	 * 					Returns true if two books have the same ISBN. Returns False
+	 * 					otherwise
 	 */
 	@Override
 	public boolean equals(Object other) {
