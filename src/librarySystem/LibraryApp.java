@@ -26,5 +26,6 @@ public class LibraryApp {
 		library.displayBooks();
 		library.removeBook(book2);
 		library.displayBooks();
+		library.removeBook(book2);
 	}
 }
