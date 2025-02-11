@@ -95,6 +95,9 @@ public class Book {
 	 * 
 	 */
 	public Book(Book other) {
+		if (other == null) {
+			throw new IllegalArgumentException("Can't copy null object.");
+		}
 		this.title = other.title;
 		this.author = other.author;
 		this.ISBN = other.ISBN;
