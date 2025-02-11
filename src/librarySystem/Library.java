@@ -53,10 +53,9 @@ public class Library {
 	 * 			Returns False if the book was not found in the array
 	 * 
 	 */
-	public
 	public boolean removeBook(Book book) {
 		for (int i=0; i<count; i++) {
-			if (books[i].getISBN().equals(ISBN)) {
+			if (books[i].equals(book)) {
 				System.out.println("Removing book: "+books[i]);
 				//shift to left
 				for (int j=i; j<count-1; j++) {
